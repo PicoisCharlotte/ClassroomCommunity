@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="iut.paci.classroomcommunity.QuizzActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/joueur2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cadena"
+            android:foregroundGravity="center"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/joueur1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|center_horizontal"
+            android:foregroundGravity="center"
+            android:src="@drawable/cadena"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_gravity="top|center_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:progress="50"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:color="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Quel technologie permet de se connecter à un réseau sans fil ?"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+
+        />
+
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_above="@+id/question"
+        android:layout_marginLeft="101dp"
+        android:layout_marginStart="101dp"
+        />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginRight="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_above="@+id/question"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <TextView
+        android:id="@+id/nom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="joueur1"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/score1"
+        android:layout_alignStart="@+id/score1"
+        android:layout_marginTop="10dp"
+    />
+
+    <TextView
+        android:id="@+id/nom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="joueur2"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/score2"
+        android:layout_alignEnd="@+id/score2"
+        android:layout_marginTop="10dp"
+    />
+
+    <Button
+        android:id="@+id/reponse1"
+        android:onClick="funcRep"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Wi-Fi"
+        android:layout_below="@+id/question"
+        android:layout_marginTop="30dp"
+        android:background="#323233"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/reponse2"
+        android:onClick="funcRep"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/reponse1"
+        android:layout_alignLeft="@+id/reponse1"
+        android:layout_alignStart="@+id/reponse1"
+        android:layout_marginTop="30dp"
+        android:background="#323233"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/reponse3"
+        android:onClick="funcRep"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Infrarouge"
+        android:layout_below="@+id/reponse2"
+        android:layout_alignLeft="@+id/reponse2"
+        android:layout_alignStart="@+id/reponse2"
+        android:layout_marginTop="30dp"
+        android:background="#323233"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/reponse4"
+        android:onClick="funcRep"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="GSM"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/reponse3"
+        android:layout_alignLeft="@+id/reponse3"
+        android:layout_alignStart="@+id/reponse3"
+        android:background="#323233"
+        android:textColor="#FFFFFF"
+        />
+
+
+
+
+
+</RelativeLayout>

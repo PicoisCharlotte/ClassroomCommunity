@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="213dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/cadena" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="top|center_horizontal"
+        android:padding="20px">
+
+        <TextView
+            android:id="@+id/connexionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connexion"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_gravity="top|center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Identifiant"
+            android:layout_gravity="top|center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/mdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe "
+            android:layout_gravity="top|center_horizontal"
+            android:inputType="textPassword"
+            />
+
+
+        <Button
+            android:id="@+id/connexionButton"
+            android:onClick="func"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:text="Connexion"
+            android:layout_gravity="top|center_horizontal"
+            android:backgroundTint="#808080"
+
+            android:background="#323233"
+            android:textColor="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

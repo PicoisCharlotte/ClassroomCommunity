@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav0"
+        android:title="Accueil"
+        />
+
+    <item
+        android:id="@+id/nav2"
+        android:title="Profil"
+        />
+
+    <item
+        android:id="@+id/nav1"
+        android:icon="@drawable/mes_amis"
+        android:title="Mes amis"
+        />
+
+    <item
+        android:id="@+id/nav3"
+
+        android:title="Paramètres"
+        />
+
+    <item
+        android:id="@+id/nav4"
+
+        android:title="A propos"
+        />
+
+    <item
+        android:id="@+id/nav5"
+        android:icon="@drawable/se_deco"
+        android:title="Se déconnecter"
+        />
+
+</menu>
